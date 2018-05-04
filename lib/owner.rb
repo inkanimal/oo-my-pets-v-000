@@ -15,7 +15,7 @@ class Owner
     @@count += 1
   end
   
-  def self.owners
+  def self.all
     @@owners
   end
   
