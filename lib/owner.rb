@@ -9,13 +9,7 @@ class Owner
     @owner = owner
     @pets = {}
     @@all << self
-  end
-  
-  def self.count
-    o = self.new 
-    o.save
     @@owners_count += 1
-    o
   end
   
   def self.all
