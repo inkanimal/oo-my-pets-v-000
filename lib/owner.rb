@@ -12,6 +12,9 @@ class Owner
     @@count += 1
   end
   
+  def self.count
+  end
+  
   def self.all
     @@all
   end
