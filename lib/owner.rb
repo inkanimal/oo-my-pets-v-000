@@ -13,7 +13,7 @@ class Owner
   end
   
   def self.count(owner)
-    o = self.new
+    o = self.new(owner)
     @@count += 1
   end
   
