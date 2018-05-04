@@ -53,6 +53,7 @@ class Owner
     @pets.all.each do |m|
       m.mood = "nervous"
   end
+end
   
   def self.all
     @@owners
