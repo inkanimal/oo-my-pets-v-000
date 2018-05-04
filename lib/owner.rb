@@ -49,6 +49,11 @@ class Owner
     @@owners.length
   end
   
+  def sell_pets
+    @pets.all.each do |m|
+      m.mood = "nervous"
+  end
+  
   def self.all
     @@owners
   end
@@ -59,21 +64,3 @@ class Owner
   
 end
 
-# def self.create
-#     s = self.new 
-#     s.save
-#     s
-#   end
-  
-#   def self.new_by_name(name)
-#     s = self.new 
-#     s.name = name
-#     s
-#   end
-  
-#   def self.create_by_name(name)
-#     s = self.new 
-#     s.name = name
-#     s.save
-#     s
-#   end
