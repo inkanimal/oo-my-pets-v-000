@@ -1,27 +1,26 @@
 class Owner
   # code goes here
-  @@all = []
-  @@count = 0
+  @@owners = []
   
-  attr_accessor :owner, :cat, :dog, :fish, :name 
+  attr_accessor :owner, :name 
   attr_reader :species
   
-  def initialize(owner, pets{})
+  def initialize(owner, pets{fishes: [], cats: [], dogs: []})
     @owner = owner
     @pets = pets
-    @@all << self
+    @@owners << self
   end
   
   def self.count
     @@count += 1
   end
   
-  def self.all
-    @@all
+  def self.owners
+    @@owners
   end
   
   def self.reset_all
-    @@all.clear
+    @@owners.clear
   end
   
 end
