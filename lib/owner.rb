@@ -10,7 +10,7 @@ class Owner
     @pets = {}
   end
   
-  def self.create_owner
+  def self.count
     o = self.new 
     o.save
     @@owners_count += 1
