@@ -12,8 +12,8 @@ class Owner
     @@all << self
   end
   
-  def self.count(owner)
-    o = self.new(owner)
+  def self.count
+    o = self.new
     o
     @@count += 1
   end
