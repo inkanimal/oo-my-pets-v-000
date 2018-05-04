@@ -13,6 +13,7 @@ class Owner
   def self.create_owner
     o = self.new 
     o.save
+    @@owners_count += 1
     o
   end
   
