@@ -2,13 +2,21 @@ class Owner
   # code goes here
   @@owners = []
   
-  attr_accessor :owner, :name 
+  attr_accessor :pets, :name 
   attr_reader :species
   
   def initialize(owner, pets = {fishes: [], cats: [], dogs: []})
     @owner = owner
     @pets = pets
     @@owners << self
+  end
+  
+  def species
+    @species = species
+  end
+  
+  def say_species
+    "I am a #{species}."
   end
   
   def self.count
