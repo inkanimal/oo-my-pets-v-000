@@ -1,7 +1,7 @@
 class Owner
   # code goes here
   @@all = []
-  @@owners_count = 0
+  @@count = 0
   
   attr_accessor :owner, :cat, :dog, :fish, :name
   
@@ -9,7 +9,7 @@ class Owner
     @owner = owner
     @pets = {}
     @@all << self
-    @@owners_count += 1
+    @@count += 1
   end
   
   def self.all
