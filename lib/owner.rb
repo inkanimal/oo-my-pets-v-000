@@ -58,6 +58,10 @@ class Owner
     @pets = {}
   end
   
+  def list_pets
+    "I have #{[:fshes]}"
+  end
+  
   def self.all
     @@owners
   end
