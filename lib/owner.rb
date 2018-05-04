@@ -12,10 +12,6 @@ class Owner
     @@all << self
   end
   
-  def species
-    @species = species
-  end
-  
   def self.count
     @@count += 1
   end
