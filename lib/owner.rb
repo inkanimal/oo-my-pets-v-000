@@ -19,10 +19,6 @@ class Owner
     @@all
   end
   
-  def save
-    self.class.all << self
-  end
-  
   def self.reset_all
     @@all.clear
   end
