@@ -14,6 +14,7 @@ class Owner
   
   def self.count(owner)
     o = self.new(owner)
+    o
     @@count += 1
   end
   
