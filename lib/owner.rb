@@ -12,7 +12,7 @@ class Owner
   end
   
   def self.count
-    @@count += 1
+    @@owners.length
   end
   
   def self.all
