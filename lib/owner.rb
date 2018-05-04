@@ -32,8 +32,19 @@ class Owner
       m.mood = "happy"
     end
   end
-    
   
+  def play_with_cats
+    @pets[:cats].each do |m|
+      m.mood = "happy"
+    end
+  end
+  
+  def feed_fish
+    @pets[:fishes].each do |m|
+      m.mood = "happy"
+    end
+  end
+    
   def self.count
     @@owners.length
   end
