@@ -55,6 +55,7 @@ class Owner
         name.mood = "nervous"
       end
     end
+    @pets{}
   end
   
   def self.all
