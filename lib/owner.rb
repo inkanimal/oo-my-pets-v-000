@@ -9,10 +9,10 @@ class Owner
     @owner = owner
     @pets = {}
     @@all << self
-    @@count += 1
   end
   
   def self.count
+    @@count += 1
   end
   
   def self.all
