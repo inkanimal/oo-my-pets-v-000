@@ -13,6 +13,7 @@ class Owner
   
   def species(species)
     @species = species
+  end
   
   def self.count
     @@count += 1
