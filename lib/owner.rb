@@ -6,9 +6,9 @@ class Owner
   attr_accessor :owner, :cat, :dog, :fish, :name 
   attr_reader :species
   
-  def initialize(owner)
+  def initialize(owner, pets{})
     @owner = owner
-    @pets = {}
+    @pets = pets
     @@all << self
   end
   
