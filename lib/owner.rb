@@ -29,7 +29,7 @@ class Owner
   
   def walk_dogs(dog_mood)
     @pets[:dog].each do |m|
-      m = "happy"
+      m.mood = "happy"
   
   def self.count
     @@owners.length
