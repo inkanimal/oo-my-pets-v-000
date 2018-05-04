@@ -10,6 +10,12 @@ class Owner
     @pets = {}
   end
   
+  def self.create_owner
+    o = self.new 
+    o.save
+    o
+  end
+  
   def self.all
     @@all
   end
